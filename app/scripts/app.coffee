@@ -28,7 +28,6 @@ angular.module('slick', [])
       infinite: "@"
       initialSlide: "@"
       lazyLoad: "@"
-      nextArrow: "@"
       onBeforeChange: "&"
       onAfterChange: "&"
       onInit: "&"
@@ -36,7 +35,6 @@ angular.module('slick', [])
       onSetPosition: "&"
       pauseOnHover: "@"
       pauseOnDotsHover: "@"
-      prevArrow: "@"
       responsive: "="
       rtl: "@"
       slide: "@"
@@ -91,13 +89,11 @@ angular.module('slick', [])
             focusOnSelect: scope.focusOnSelect is "true"
             infinite: scope.infinite isnt "false"
             initialSlide:scope.initialSlide or 0
-            nextArrow: scope.nextArrow or undefined
             lazyLoad: scope.lazyLoad or "ondemand"
             beforeChange: if attrs.onBeforeChange then scope.onBeforeChange else undefined
             onReInit: if attrs.onReInit then scope.onReInit else undefined
             onSetPosition: if attrs.onSetPosition then scope.onSetPosition else undefined
             pauseOnHover: scope.pauseOnHover isnt "false"
-            prevArrow: scope.prevArrow or undefined
             responsive: scope.responsive or undefined
             rtl: scope.rtl is "true"
             slide: scope.slide or "div"
